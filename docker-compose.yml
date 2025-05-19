@@ -16,3 +16,4 @@ services:
             dockerfile: Dockerfile
         ports:
             - "11000:5000"
+        privileged: true

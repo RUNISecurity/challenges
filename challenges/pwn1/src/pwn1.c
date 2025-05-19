@@ -12,6 +12,7 @@ void get_flag()
 
 int main(int argc, char *argv[])
 {
+    setvbuf(stdout, NULL, _IONBF, 0);
     char buffer[60];
 
     printf("Enter your name: ");
