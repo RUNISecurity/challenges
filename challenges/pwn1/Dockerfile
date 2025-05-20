@@ -1,6 +1,6 @@
 FROM pwn.red/jail
 
-COPY --from=debian:stable-slim / /srv/
+COPY --from=ubuntu / /srv/
 
 RUN mkdir /srv/app
 COPY ./src/pwn /srv/app/run
