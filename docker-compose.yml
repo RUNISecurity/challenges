@@ -1,18 +1,22 @@
 version: "3.8"
 
 services:
+
+   # Web challenges, port 10000 - 11000
+
     web1:
         build:
-            context: ./challenges/web1
+            context: ./challenges/web/web1
             dockerfile: Dockerfile
         ports:
             - "10000:80"
 
-    # All pwn challenges are hosted on port 5000, thats how red.pwn is configured
+
+    # Pwn challenges, port 11000 - 12000
 
     pwn1:
         build:
-            context: ./challenges/pwn1
+            context: ./challenges/pwn/pwn1
             dockerfile: Dockerfile
         ports:
             - "11000:5000"
