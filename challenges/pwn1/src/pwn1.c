@@ -1,11 +1,11 @@
-// gcc -o pwn pwn1.c -std=c99 -fno-stack-protector -no-pie
+// gcc -o pwn pwn1.c -std=c99 -g -fno-stack-protector -no-pie
 
 #include <stdio.h>
 #include <stdlib.h>
 
 void get_flag()
 {
-    printf("RUNISEC{n0w_1_G3t_1t}");
+    printf("RUNISEC{n0w_1_G3ts_1t}");
 }
 
 int main(int argc, char *argv[])
